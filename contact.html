@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดต่อเรา (Contact) - Chayan Boochayan | Creative Media Portfolio</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">Loading Contact...</div>
+  </div>
+
+  <!-- Ambient Glowing Background Elements -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+
+  <!-- Shared Sticky Navigation Bar (แก้ไขได้ที่ assets/js/navbar.js เพียงที่เดียว) -->
+  <div id="global-navbar-container"></div>
+
+  <!-- Main Content Container -->
+  <main class="py-5">
+    <div class="container py-lg-4">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-5 reveal">
+        <div class="section-badge">
+          <i class="fa-solid fa-envelope-open-text"></i> ข้อมูลติดต่อ
+        </div>
+        <h1 class="section-title">Get in Touch with Me</h1>
+        <p class="section-desc">
+          ยินดีรับฟังข้อเสนอแนะ การร่วมงานโปรเจกต์ หรือโอกาสการฝึกงาน 
+        </p>
+      </div>
+
+      <div class="row g-5">
+        
+        <!-- Contact Information Cards -->
+        <div class="col-lg-5 reveal delay-1">
+          <h3 class="h4 fw-bold mb-4">ช่องทางติดต่อหลัก</h3>
+          
+          <div class="d-flex flex-column gap-3 mb-4">
+            
+            <!-- Email -->
+            <a href="mailto:chayankrit@gmail.com" class="contact-info-card text-decoration-none">
+              <div class="contact-icon-box">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div>
+                <span class="text-muted small d-block">Email Address</span>
+                <strong class="fs-6">chayankrit@gmail.com</strong>
+              </div>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/chayan.boochapan?locale=th_TH" target="_blank" rel="noopener noreferrer" class="contact-info-card text-decoration-none">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div>
+                <span class="text-muted small d-block">Facebook Profile</span>
+                <strong class="fs-6">Chayan Boochayan</strong>
+              </div>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/k_r_i_t_._._kk/" target="_blank" rel="noopener noreferrer" class="contact-info-card text-decoration-none">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div>
+                <span class="text-muted small d-block">Instagram Portfolio</span>
+                <strong class="fs-6">k_r_i_t_._._kk</strong>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/chayankrit-dotcom" target="_blank" rel="noopener noreferrer" class="contact-info-card text-decoration-none">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div>
+                <span class="text-muted small d-block">GitHub Repository</span>
+                <strong class="fs-6">chayankrit-dotcom</strong>
+              </div>
+            </a>
+
+          </div>
+
+          <!-- Location Info Box -->
+          <div class="custom-card p-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="contact-icon-box" style="width: 44px; height: 44px; font-size: 1.1rem;">
+                <i class="fa-solid fa-map-pin"></i>
+              </div>
+              <div>
+                <h6 class="fw-bold mb-0">ที่อยู่ประจำ</h6>
+                <p class="text-muted small mb-0">วาริชภูมิ สกลนคร ประเทศไทย (พร้อมทำงานแบบ Onsite & Online)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="col-lg-7 reveal delay-2">
+          <div class="custom-card p-4 p-md-5">
+            <h3 class="h4 fw-bold mb-2">ส่งข้อความถึงผมโดยตรง</h3>
+            <p class="text-muted small mb-4">กรอกข้อมูลลงในแบบฟอร์มด้านล่างเพื่อฝากข้อความหรือนัดหมายการพูดคุย</p>
+
+            <form id="contactForm" onsubmit="event.preventDefault(); showSubmissionAlert();">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="senderName" class="form-label small text-muted">ชื่อของคุณ *</label>
+                  <input type="text" class="form-control form-control-custom" id="senderName" placeholder="เช่น คุณสมชาย หรือ บริษัท ABC" required>
+                </div>
+                <div class="col-md-6">
+                  <label for="senderEmail" class="form-label small text-muted">อีเมลสำหรับติดต่อกลับ *</label>
+                  <input type="email" class="form-control form-control-custom" id="senderEmail" placeholder="name@example.com" required>
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label small text-muted">หัวข้อที่ต้องการติดต่อ</label>
+                  <input type="text" class="form-control form-control-custom" id="subject" placeholder="เช่น สอบถามเกี่ยวกับการร่วมงาน / จ้างงานฟรีแลนซ์" required>
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label small text-muted">รายละเอียดข้อความ *</label>
+                  <textarea class="form-control form-control-custom" id="message" rows="5" placeholder="พิมพ์ข้อความของคุณที่นี่..." required></textarea>
+                </div>
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn btn-primary-gradient w-100 justify-content-center py-3">
+                    <i class="fa-solid fa-paper-plane me-1"></i> ส่งข้อความ (Send Message)
+                  </button>
+                </div>
+              </div>
+            </form>
+
+            <!-- Success Alert Placeholder -->
+            <div id="contactSuccessAlert" class="alert alert-success d-none mt-4 border-0 rounded-3 text-center" role="alert" style="background: rgba(40, 167, 69, 0.2); color: #75b798;">
+              <i class="fa-solid fa-circle-check me-2 fs-5"></i>
+              <strong>ส่งข้อความเรียบร้อยแล้ว!</strong> ขอขอบคุณที่ให้ความสนใจ ผมจะติดต่อกลับโดยเร็วที่สุดครับ
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top" title="เลื่อนขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Shared Global Footer (แก้ไขได้ที่ assets/js/footer.js เพียงที่เดียว) -->
+  <div id="global-footer-container"></div>
+
+  <!-- Bootstrap 5.3 Bundle with Popper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Shared Navbar Component JS (แก้ไข Navbar ที่นี่จุดเดียว มีผลทุกหน้า) -->
+  <script src="assets/js/navbar.js"></script>
+  <!-- Shared Footer Component JS (แก้ไข Footer ที่นี่จุดเดียว มีผลทุกหน้า) -->
+  <script src="assets/js/footer.js"></script>
+  <!-- Custom Main JS -->
+  <script src="assets/js/main.js"></script>
+  
+  <script>
+    function showSubmissionAlert() {
+      const alertBox = document.getElementById('contactSuccessAlert');
+      alertBox.classList.remove('d-none');
+      document.getElementById('contactForm').reset();
+      setTimeout(() => {
+        alertBox.classList.add('d-none');
+      }, 6000);
+    }
+  </script>
+</body>
+</html>
+
